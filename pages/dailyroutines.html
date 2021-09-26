@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Routines</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/JavaScript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/" class="brand-logo left"><img src="/img/lotus.svg" height="50px"></a>
+                <span class="right grey-text text-darken-1">
+                    <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+                </span>
+        </div>
+    </nav>
+ 
+   <ul id="side-menu" class="sidenav side-menu">
+       <li><a class="subheader">Mindful Habits</a></li>
+       <li><a href="/" class="waves-effect">Home</a></li>
+       <li><a href="/pages/dailyroutines.html" class="waves-effect">Daily Routines</a></li>
+       <li><a href="/pages/mymediations.html" class="waves-effect">My Meditations</a></li>
+       <li><a href="/pages/dailygratitude.html" class="waves-effect">Daily Gratitude</a></li>
+       <li><a href="/pages/myintentions.html" class="waves-effect">My Intentions</a></li>
+       <li><a href="/pages/myaffirmations.html" class="waves-effect">My Affirmations</a></li>
+       <li><a href="/pages/weeklyjournal.html" class="waves-effect">Weekly Journal Prompt</a></li>
+       <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+       <li>
+           <div class="divider"></div>
+       </li>
+       <li><a href="/pages/contact.html" class="waves-effect"><i class="material-icons">mail_outline</i>Contact</a>
+       </li>
+   </ul>
+      <!--Tasks-->
+    <div>
+        <h1 class="container center space">My Routines</h1>
+    </div>
+        <div>
+            <h2 class="container center">Morning Routine</h2>
+        </div>
+        <div class="tasks container frey-text text-darken-1">
+            <div class="card-panel task white row">
+                <div class="task-detail">
+                    <div class="">It is my intention that I allow abundance to flow into my life with ease.</div>
+                </div>
+                <div class="task-delete">
+                    <i class="material-icons">delete_outline</i>
+                </div>
+            </div>
+        </div>
+    <div class="center">
+        <a class="btn-floating btn-medium add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+            <div>
+                <h2 class="container center space">Evening Routine</h2>
+            </div>
+            <div class="tasks container frey-text text-darken-1">
+                <div class="card-panel task white row">
+                    <div class="task-detail">
+                        <div class="">Plan out the next day and set intentions.</div>
+                    </div>
+                    <div class="task-delete">
+                        <i class="material-icons">delete_outline</i>
+                    </div>
+                </div>
+            </div>
+            <div class="tasks container frey-text text-darken-1">
+                <div class="card-panel task white row">
+                    <div class="task-detail">
+                        <div class="">Meditate for 15 minutes.</div>
+                    </div>
+                    <div class="task-delete">
+                        <i class="material-icons">delete_outline</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="center">
+        <a class="btn-floating btn-medium add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-task container section">
+            <h6>Add New Task to Routine</h6>
+            <div class="divider"></div>
+                <div class="input-field">
+                    <input placeholder="New Task" id="title" class="validate" type="text">
+                </div>
+              
+                <div class="input-field center">
+                    <button class="btn-small">Add</button>
+                </div>
+        </form>
+    </div>
+    <script src="/js/ui.js"></script>
+</body>
+</html>
